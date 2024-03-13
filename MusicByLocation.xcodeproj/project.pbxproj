@@ -14,6 +14,7 @@
 		F06A55682BA0C00C0061702A /* MusicByLocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06A55672BA0C00C0061702A /* MusicByLocationTests.swift */; };
 		F06A55722BA0C00C0061702A /* MusicByLocationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06A55712BA0C00C0061702A /* MusicByLocationUITests.swift */; };
 		F06A55742BA0C00C0061702A /* MusicByLocationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06A55732BA0C00C0061702A /* MusicByLocationUITestsLaunchTests.swift */; };
+		F06A55852BA0C1840061702A /* LocationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06A55842BA0C1840061702A /* LocationHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		F06A556D2BA0C00C0061702A /* MusicByLocationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicByLocationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F06A55712BA0C00C0061702A /* MusicByLocationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicByLocationUITests.swift; sourceTree = "<group>"; };
 		F06A55732BA0C00C0061702A /* MusicByLocationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicByLocationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F06A55842BA0C1840061702A /* LocationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +97,9 @@
 			isa = PBXGroup;
 			children = (
 				F06A55562BA0C0090061702A /* MusicByLocationApp.swift */,
-				F06A55582BA0C0090061702A /* ContentView.swift */,
+				F06A55832BA0C16B0061702A /* ViewModels */,
+				F06A55822BA0C1640061702A /* Views */,
+				F06A55812BA0C15F0061702A /* Models */,
 				F06A555A2BA0C00C0061702A /* Assets.xcassets */,
 				F06A555C2BA0C00C0061702A /* Preview Content */,
 			);
@@ -125,6 +129,29 @@
 				F06A55732BA0C00C0061702A /* MusicByLocationUITestsLaunchTests.swift */,
 			);
 			path = MusicByLocationUITests;
+			sourceTree = "<group>";
+		};
+		F06A55812BA0C15F0061702A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F06A55842BA0C1840061702A /* LocationHandler.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F06A55822BA0C1640061702A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F06A55582BA0C0090061702A /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F06A55832BA0C16B0061702A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F06A55852BA0C1840061702A /* LocationHandler.swift in Sources */,
 				F06A55592BA0C0090061702A /* ContentView.swift in Sources */,
 				F06A55572BA0C0090061702A /* MusicByLocationApp.swift in Sources */,
 			);
@@ -424,11 +452,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MusicByLocation/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app requires location serves to access your favorite tunes";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,11 +482,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MusicByLocation/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app requires location serves to access your favorite tunes";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
